@@ -1,13 +1,18 @@
 package org.example.service
 
 import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Inject
 import org.example.rest.request.PaymentRequest
 
 @ApplicationScoped
-class PaymentService {
+class PaymentService @Inject constructor(
 
-    fun chargePayment(paymentRequest: PaymentRequest) {
-        print("Processing")
+    private val paymentProcessor: PaymentProcessor
+
+) {
+
+    fun chargePayment(paymentRequest: PaymentRequest) : Boolean{
+        return paymentProcessor.chargePayment(paymentRequest)
     }
 
 }
