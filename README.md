@@ -6,7 +6,7 @@ The idea of this project is to use the Strategy Pattern to solve a problem to dy
 
 Using Strategy Pattern and leveraging features from Quarkus (Spring has similar features) we separate responsibilities and decouple the core application from each payment type specificities. 
 
-Also, we can easily add new payment types, without having to change the core of the payment code, respecting some of the SOLID principles. 
+Also, we can easily add new payment types, without having to change the core of the payment code or adding `switch` or `if` clauses, respecting some of the SOLID principles. 
 
  
 ## Technologies
