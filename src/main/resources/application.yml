@@ -2,3 +2,4 @@ quarkus:
   log:
     min-level: DEBUG
     level: DEBUG
+
